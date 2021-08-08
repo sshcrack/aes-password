@@ -22,6 +22,10 @@
       { "allowWholeFile": true }
     ],
     "eslint-comments/no-unused-disable": "error",
+    "functional/no-loop-statement": "off",
+    "functional/no-let": "off",
+    "functional/no-this-expression": "off",
+    "functional/no-throw-statement": "off",
     "import/order": [
       "error",
       { "newlines-between": "always", "alphabetize": { "order": "asc" } }

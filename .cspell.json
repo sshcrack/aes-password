@@ -21,7 +21,11 @@
     "sandboxed",
     "transpiled",
     "typedoc",
-    "untracked"
+    "untracked",
+    "unpackage",
+    "Hmax",
+    "encryptor",
+    "ENCRYPTOR"
   ],
   "flagWords": [],
   "ignorePaths": [
