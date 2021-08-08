@@ -25,7 +25,8 @@
     "unpackage",
     "Hmax",
     "encryptor",
-    "ENCRYPTOR"
+    "ENCRYPTOR",
+    "deasync"
   ],
   "flagWords": [],
   "ignorePaths": [

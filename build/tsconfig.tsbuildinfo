@@ -137,12 +137,12 @@
         "affectsGlobalScope": true
       },
       "../src/lib/Packager.ts": {
-        "version": "b640093079bddc5f387dacf6910f473d4aca244b785a13fcabb53cab64cb3570",
+        "version": "41ac0ce79521ac0a90bb9595684593e0c73707dd3dfe4bb8d154bd8e65a51119",
         "signature": "830b035a28e880c244c6f9c0115a76a451a962524713d13692c20dd96a3ae532",
         "affectsGlobalScope": false
       },
       "../src/lib/AES.ts": {
-        "version": "fafb251d0c884fce4d1148bab7374f746833c98692f3e3d3cebd3f102cf7b13f",
+        "version": "f41d9ca05adeda4bb6fc3549bfc13a13be1c9b4142919baabbf03b91fae9b226",
         "signature": "6784affc1b012f47ceed71e9bc37dfc45cb0e0ab3578080f926b2a465e08115b",
         "affectsGlobalScope": false
       },
@@ -156,8 +156,8 @@
         "signature": "0ceec7923fb2a6e540f73682c7acffe9124c9c3517a02eac27632844b8a61251",
         "affectsGlobalScope": false
       },
-      "../src/lib/AES.spec.ts": {
-        "version": "1e3da7dc45b7e0241de5c890df5ab578cfd7a9576abdce54c25660444fb606d4",
+      "../src/lib/Asynchronous.spec.ts": {
+        "version": "de0f11bce71258353d3be329f69086f7bd9c8d6be04ebe6a7f81dc988cc6b4d3",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -447,6 +447,7 @@
         "../src/types"
       ],
       "project": "../tsconfig.json",
+      "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
@@ -859,16 +860,16 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/lib/AES.ts"
       ],
-      "../src/lib/AES.spec.ts": [
-        "../node_modules/@types/node/crypto.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/ava/index.d.ts",
-        "../src/lib/AES.ts"
-      ],
       "../src/lib/AES.ts": [
         "../node_modules/@types/node/crypto.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/lib/Packager.ts"
+      ],
+      "../src/lib/Asynchronous.spec.ts": [
+        "../node_modules/@types/node/crypto.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/ava/index.d.ts",
+        "../src/lib/AES.ts"
       ],
       "../src/lib/Packager.ts": [
         "../node_modules/@types/node/util.d.ts"
@@ -1365,8 +1366,8 @@
       "../node_modules/typescript/lib/lib.es5.d.ts",
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../src/index.ts",
-      "../src/lib/AES.spec.ts",
       "../src/lib/AES.ts",
+      "../src/lib/Asynchronous.spec.ts",
       "../src/lib/Packager.ts"
     ]
   },

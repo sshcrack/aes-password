@@ -6,11 +6,13 @@ export function packageComponents(
 ) {
   const formatted = `$${encryptorID}$${m},${h},${i},${s},${r}$${encryptedContent}`;
 
-  return formatted;
+  return Buffer.from(formatted).toString('base64');
 }
 
 export function unpackageComponents(raw: string) {
-  const [, encryptor, componentsStr, encryptedContent] = raw.split('$');
+  const str = Buffer.from(raw, 'base64').toString();
+
+  const [, encryptor, componentsStr, encryptedContent] = str.split('$');
   if (encryptor !== encryptorID)
     throw new Error('Failed decrypting: unrecognized encrypted payload');
 

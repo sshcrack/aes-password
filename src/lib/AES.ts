@@ -125,13 +125,14 @@ export class AESEncryption {
     hmacTool.update(salt);
     const hmacHex = hmacTool.digest('hex');
 
-    return packageComponents(encryptedContent, {
+    const packaged = packageComponents(encryptedContent, {
       m: 'cbc',
       h: hmacHex,
       i: ivHex,
       s: salt,
       r: DERIVATION_ROUNDS,
     });
+    return packaged;
   }
 
   public async decryptText(encryptedString: string, password: string) {
