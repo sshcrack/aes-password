@@ -36,3 +36,6 @@ const decrypted = AESEncryption.decrypt(encrypted, "Password")
 <li align="center">
     <a href = "https://github.com/perry-mitchell">
 Perry Mitchell</a></li>
+<li align="center">
+    <a href = "https://github.com/rithulkamesh">
+Rithul Kamesh</a></li>
