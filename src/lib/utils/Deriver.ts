@@ -1,15 +1,14 @@
-import { pbkdf2 as deriveKey } from "crypto"
+import { pbkdf2 as deriveKey } from 'crypto';
 
 const HMAC_KEY_SIZE = 32;
 const PASSWORD_KEY_SIZE = 32;
-
 
 export class Deriver {
   public static pbkdf2({
     password,
     salt,
     rounds,
-    bits
+    bits,
   }: pbkdf2Input): Promise<Buffer> {
     return new Promise((resolve, reject) => {
       deriveKey(password, salt, rounds, bits / 8, 'sha256', (err, key) => {
@@ -20,11 +19,10 @@ export class Deriver {
     });
   }
 
-
   public static deriveFromPassword({
     password,
     salt,
-    rounds
+    rounds,
   }: DeriveIn): Promise<DeriveOut> {
     return new Promise(async (resolve, reject) => {
       const bits = (PASSWORD_KEY_SIZE + HMAC_KEY_SIZE) * 8;
@@ -58,25 +56,24 @@ export class Deriver {
           hmac: hmacHex,
         });
       } catch (e) {
-        reject(e)
+        reject(e);
       }
     });
   }
 }
 
-
 type pbkdf2Input = {
-  readonly password: string,
-  readonly salt: string,
-  readonly rounds: number,
-  readonly bits: number
-}
+  readonly password: string;
+  readonly salt: string;
+  readonly rounds: number;
+  readonly bits: number;
+};
 
 type DeriveIn = {
-  readonly password: string,
-  readonly salt: string,
-  readonly rounds: number
-}
+  readonly password: string;
+  readonly salt: string;
+  readonly rounds: number;
+};
 
 type DeriveOut = {
   readonly salt: string;

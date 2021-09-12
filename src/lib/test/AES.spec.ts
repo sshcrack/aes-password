@@ -6,7 +6,6 @@ import { AESEncryption } from '../AES';
 
 const strLength = 20;
 
-
 test('Encrypt', async (t) => {
   const key = randomString();
   const str = randomString(strLength);

@@ -1,4 +1,4 @@
-import crypto from "crypto"
+import crypto from 'crypto';
 
 export class Generator {
   public static async generateSalt(length: number) {
@@ -22,4 +22,3 @@ export class Generator {
     return Promise.resolve(Buffer.from(crypto.randomBytes(16)));
   }
 }
-
