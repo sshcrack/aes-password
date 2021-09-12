@@ -8,18 +8,18 @@ Secure Encryption as easy as a-b-c. All you need to do is import a module and ca
 <h2 align="center">Encryption</h2>
 
 ```ts
-import { AESEncryption } from "aes-password"
+import { AESEncryption } from 'aes-password';
 
-const encrypted = AESEncryption.encrypt("My Plain Text", "Password")
+const encrypted = AESEncryption.encrypt('My Plain Text', 'Password');
 ```
 
 <h2 align="center">Decryption</h2>
 
 ```ts
-import { AESEncryption } from "aes-password"
+import { AESEncryption } from 'aes-password';
 
-const encrypted = AESEncryption.encrypt("My Plain Text", "Password")
-const decrypted = AESEncryption.decrypt(encrypted, "Password")
+const encrypted = AESEncryption.encrypt('My Plain Text', 'Password');
+const decrypted = AESEncryption.decrypt(encrypted, 'Password');
 ```
 
 <h2 align="center">Projects used in</h2>
@@ -35,7 +35,8 @@ const decrypted = AESEncryption.decrypt(encrypted, "Password")
 </li>
 <li align="center">
     <a href = "https://github.com/perry-mitchell">
-Perry Mitchell</a></li>
+Perry Mitchell</a> (and his great <a href="https://hotsource.dev/2019/08/20/encrypting-text-using-aes-cbc-in-nodejs/
+">article</a>)</li>
 <li align="center">
     <a href = "https://github.com/rithulkamesh">
 Rithul Kamesh</a></li>
