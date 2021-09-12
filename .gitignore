@@ -5,3 +5,5 @@ src/**.js
 coverage
 *.log
 yarn.lock
+build
+package-lock.json
