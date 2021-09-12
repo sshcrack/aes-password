@@ -1,6 +1,6 @@
 {
   "name": "aes-password",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "email": "hendrik.lind77@gmail.com",
     "name": "Hendrik",
@@ -12,7 +12,14 @@
   "module": "build/module/index.js",
   "repository": "https://github.com/sshcrack/aes-password",
   "license": "MIT",
-  "keywords": ["aes", "password", "pbkdf2", "encrypt", "decrypt", "crypto"],
+  "keywords": [
+    "aes",
+    "password",
+    "pbkdf2",
+    "encrypt",
+    "decrypt",
+    "crypto"
+  ],
   "scripts": {
     "build": "run-p build:*",
     "build:main": "tsc -p tsconfig.json",
