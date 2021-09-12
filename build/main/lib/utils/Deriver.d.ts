@@ -4,15 +4,15 @@ export declare class Deriver {
     static deriveFromPassword({ password, salt, rounds }: DeriveIn): Promise<DeriveOut>;
 }
 declare type pbkdf2Input = {
-    password: string;
-    salt: string;
-    rounds: number;
-    bits: number;
+    readonly password: string;
+    readonly salt: string;
+    readonly rounds: number;
+    readonly bits: number;
 };
 declare type DeriveIn = {
-    password: string;
-    salt: string;
-    rounds: number;
+    readonly password: string;
+    readonly salt: string;
+    readonly rounds: number;
 };
 declare type DeriveOut = {
     readonly salt: string;
