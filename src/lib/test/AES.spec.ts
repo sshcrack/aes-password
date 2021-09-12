@@ -2,10 +2,12 @@ import crypto from 'crypto';
 
 import test from 'ava';
 
-import { AESEncryption } from './AES';
+import { AESEncryption } from '../AES';
 
 const strLength = 20;
-test('ASYNC: Encrypt', async (t) => {
+
+
+test('Encrypt', async (t) => {
   const key = randomString();
   const str = randomString(strLength);
 
@@ -17,7 +19,7 @@ test('ASYNC: Encrypt', async (t) => {
   }
 });
 
-test('ASYNC: Encrypt & Decrypt', async (t) => {
+test('Encrypt & Decrypt', async (t) => {
   const key = randomString();
   const str = randomString(strLength);
 

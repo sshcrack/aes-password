@@ -2,7 +2,7 @@ const encryptorID = 'AES_PASS_ENCRYPTOR';
 
 export function packageComponents(
   encryptedContent: string,
-  { m, h, i, s, r }: PackagedComponents
+  { method: m, hmacHex: h, iv: i, salt: s, rounds: r }: PackagedComponents
 ) {
   const formatted = `$${encryptorID}$${m},${h},${i},${s},${r}$${encryptedContent}`;
 
@@ -18,11 +18,11 @@ export function unpackageComponents(raw: string) {
 
   const [m, h, i, s, r] = componentsStr.split(',');
   const components: UnPackagedComponents = {
-    m: m,
-    h: h,
-    i: i,
-    s: s,
-    r: parseInt(r, 10),
+    method: m,
+    hmacHex: h,
+    iv: i,
+    salt: s,
+    rounds: parseInt(r, 10),
     encryptedContent: encryptedContent,
   };
 
@@ -30,11 +30,11 @@ export function unpackageComponents(raw: string) {
 }
 
 export type PackagedComponents = {
-  readonly m: string;
-  readonly h: string;
-  readonly i: string;
-  readonly s: string;
-  readonly r: number;
+  readonly method: string;
+  readonly hmacHex: string;
+  readonly iv: string;
+  readonly salt: string;
+  readonly rounds: number;
 };
 
 export type UnPackagedComponents = PackagedComponents & {
