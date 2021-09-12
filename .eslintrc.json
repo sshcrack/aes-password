@@ -12,7 +12,7 @@
     "plugin:import/typescript",
     "plugin:functional/lite",
     "prettier",
-    "prettier/@typescript-eslint"
+    "eslint-config-prettier"
   ],
   "globals": { "BigInt": true, "console": true, "WebAssembly": true },
   "rules": {
@@ -26,6 +26,8 @@
     "functional/no-let": "off",
     "functional/no-this-expression": "off",
     "functional/no-throw-statement": "off",
+    "functional/no-class": "off",
+    "no-async-promise-executor": "off",
     "import/order": [
       "error",
       { "newlines-between": "always", "alphabetize": { "order": "asc" } }
