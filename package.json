@@ -95,6 +95,9 @@
     ],
     "require": [
       "ts-node/register"
+    ],
+    "files": [
+      "src/**/*.spec.ts"
     ]
   },
   "config": {

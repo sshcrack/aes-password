@@ -24,7 +24,7 @@ test('Reliable pbkdf2 generation', async (t) => {
   const derived1 = await Deriver.pbkdf2(options);
   const derived2 = await Deriver.pbkdf2(options);
 
-  t.is(derived1, derived2);
+  t.deepEqual(derived1, derived2);
 });
 
 test('Derive is reliable', async (t) => {
@@ -41,5 +41,5 @@ test('Derive is reliable', async (t) => {
   const derived1 = await Deriver.deriveFromPassword(options);
   const derived2 = await Deriver.deriveFromPassword(options);
 
-  t.is(derived1, derived2);
+  t.deepEqual(derived1, derived2);
 });

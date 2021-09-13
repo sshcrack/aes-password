@@ -21,7 +21,7 @@ test('Package', (t) => {
 test('Unpackage', (t) => {
   const unpackaged = unpackageComponents(packaged);
 
-  t.is(unpackaged, {
+  t.deepEqual(unpackaged, {
     encryptedContent: encryptedPackager,
     ...info,
   });
