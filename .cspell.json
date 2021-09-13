@@ -1,6 +1,6 @@
 {
-  "version": "0.1",
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
+  "version": "0.2",
   "language": "en",
   "words": [
     "bitjson",
@@ -23,10 +23,14 @@
     "typedoc",
     "untracked",
     "unpackage",
-    "Hmax",
+    "unpackaged",
     "encryptor",
     "ENCRYPTOR",
-    "deasync"
+    "deasync",
+    "Clipher",
+    "Rithul",
+    "Kamesh",
+    "sshcrack"
   ],
   "flagWords": [],
   "ignorePaths": [

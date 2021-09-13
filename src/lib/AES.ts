@@ -71,9 +71,9 @@ export class AESEncryption {
     hmacTool.update(encryptedComponents.salt);
 
     //? Check hmac for tampering
-    const newHmaxHex = hmacTool.digest('hex');
+    const newHmacHex = hmacTool.digest('hex');
 
-    const newHmacBuffer = Buffer.from(newHmaxHex, 'hex');
+    const newHmacBuffer = Buffer.from(newHmacHex, 'hex');
     const hmacBuffer = Buffer.from(hmacData, 'hex');
 
     if (timingSafeEqual(hmacBuffer, newHmacBuffer) !== true)
