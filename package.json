@@ -110,7 +110,7 @@
       "**/*.spec.js"
     ]
   },
-  "hooks": {
+  "husky": {
     "hooks": {
       "pre-commit": "npm test"
     }
