@@ -1,5 +1,5 @@
 <h1 align="center">Aes Password</h1>
-
+(not maintained, please refer to aes encryption and password hashing using argon2)
 <h2 align="center">About</h2>
 
 <p align= "center">
